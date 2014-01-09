@@ -1,0 +1,21 @@
+<block>
+  <name>Sample bit bb</name>
+  <key>cw_binary_sample_bit_bb</key>
+  <category>CW_BINARY</category>
+  <import>import cw_binary</import>
+  <make>cw_binary.sample_bit_bb($bit_length)</make>
+  <param>
+    <name>Bit_length</name>
+    <key>bit_length</key>
+    <value>1000</value>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+  </source>
+</block>

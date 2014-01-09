@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<block>
+  <name>decode_hamming_bb</name>
+  <key>hamming_decode_hamming_bb</key>
+  <category>hamming</category>
+  <import>import hamming</import>
+  <make>hamming.decode_hamming_bb()</make>
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+  </source>
+</block>

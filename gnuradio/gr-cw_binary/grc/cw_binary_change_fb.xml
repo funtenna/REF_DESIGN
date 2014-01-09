@@ -1,0 +1,21 @@
+<block>
+  <name>Change fb</name>
+  <key>cw_binary_change_fb</key>
+  <category>CW_BINARY</category>
+  <import>import cw_binary</import>
+  <make>cw_binary.change_fb($epsilon)</make>
+  <param>
+    <name>Epsilon</name>
+    <key>epsilon</key>
+    <value>0.000001</value>
+    <type>float</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>float</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+  </source>
+</block>

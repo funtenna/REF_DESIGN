@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<block>
+  <name>wait_for_prefix_bb</name>
+  <key>hamming_wait_for_prefix_bb</key>
+  <category>hamming</category>
+  <import>import hamming</import>
+  <make>hamming.wait_for_prefix_bb()</make>
+
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+  </sink>
+
+  <source>
+    <name>out</name>
+    <type>byte</type>
+  </source>
+</block>
