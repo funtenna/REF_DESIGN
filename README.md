@@ -1,9 +1,21 @@
-# Funtenna
+# Funtenna: Reference Implementation
+
+This repository contains the code for the reference funtenna implementation.
+
+It transmits Hamming-coded data from a BeagleBone's GPIO pin, bit-banged at
+about 12.5 MHz. This data is received on a USRP2, then demodulated in GNU Radio.
+
+## Materials
+
+* BeagleBone (Rev2) running Ångström Linux
+* Ettus research USRP2 (this is discontinued, but any GNU Radio-compatible SDR
+  board that can receive at 12.5 MHz will do)
+* Computer with GNU Radio >=3.7
 
 ## Steps/setup
 
 1. Hook up a wire/antenna to pin 8.46 on the Beaglebone (consult the
-[reference manual](http://beagleboard.org/static/beaglebone/latest/Docs/Hardware/BONE_SRM.pdf).
+[reference manual](http://beagleboard.org/static/beaglebone/latest/Docs/Hardware/BONE_SRM.pdf)).
 
 2. Copy `beaglebone/gpio` to BeagleBone; compile the kernel module.
 [This](http://nomel.tumblr.com/post/30357133735/beaglebone-tutorial-how-to-compile-kernel-modules-and)
